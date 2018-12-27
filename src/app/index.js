@@ -16,13 +16,9 @@ class App extends Component {
     return (
       <div className="app">
         <header className="app__content">
-          <p>
-            Hi, I’m Hazmi.<br />
-            I create apps and websites.
-          </p>
-          <p>
-            {helpTextIntro} {helpTextLink}{helpTextDot}
-          </p>
+          <h1 className="app__title">Hi, I’m Hazmi</h1>
+          <p className="app__subtitle">I create apps and websites</p>
+          <p className="app__followup">{helpTextIntro} {helpTextLink}{helpTextDot}</p>
         </header>
       </div>
     );
