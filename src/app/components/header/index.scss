@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  &__title {
+    text-transform: uppercase;
+    margin: 0 0 3px;
+    padding: 0;
+    font-size: calc(40px + 2vmin);
+    border-bottom: 1px solid #fff;
+  }
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: calc(6px + 2vmin);
+  }
+}
