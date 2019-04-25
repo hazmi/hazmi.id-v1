@@ -3,7 +3,11 @@
   flex-direction: row;
   color: white;
   min-height: 100vh;
-
+  @media screen and (orientation:portrait) {
+    & {
+      flex-direction: column;
+    }
+  }
   &__intro {
     flex: 1;
     display: flex;
