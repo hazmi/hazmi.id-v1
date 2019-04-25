@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import './index.scss';
 
 const emailPart1 = 'hello';
@@ -8,10 +9,14 @@ export const Contact = () => (
   <div className="contact">
     <span className="contact__help">Need help? Feel free to</span>
     {' '}
-    <a className="contact__email" href={`mailto:${emailPart1}@${emailPart2}`}>
+    <ReactGA.OutboundLink
+      eventLabel="contact"
+      className="contact__email"
+      to={`mailto:${emailPart1}@${emailPart2}`}
+    >
       <span data-title="contact me">contact me</span>
-    </a>
-     <span className="contact__help">.</span>
+    </ReactGA.OutboundLink>
+    <span className="contact__help">.</span>
   </div>
 );
 

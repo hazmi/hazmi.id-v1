@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import './index.scss';
 
 const introTodoMVC = `
@@ -14,21 +15,30 @@ export const Playground = () => (
     <h2>Playground</h2>
     <div className="playground__item">
       <h3>
-        <a href="https://todomvc.hazmi.id">
+        <ReactGA.OutboundLink
+          eventLabel="todomvc:demo:header"
+          to="https://todomvc.hazmi.id"
+        >
           <span data-title="TodoMVC">TodoMVC</span>
-        </a>
+        </ReactGA.OutboundLink>
       </h3>
       <p>{introTodoMVC}</p>
       <ul className="playground__item-footer">
         <li>
-          <a href="https://todomvc.hazmi.id">
+          <ReactGA.OutboundLink
+            eventLabel="todomvc:demo:action"
+            to="https://todomvc.hazmi.id"
+          >
             <span data-title="Demo">Demo</span>
-          </a>
+          </ReactGA.OutboundLink>
         </li>
         <li>
-          <a href="https://github.com/hazmi/TodoMVC">
+          <ReactGA.OutboundLink
+            eventLabel="todomvc:github"
+            to="https://github.com/hazmi/TodoMVC"
+          >
             <span data-title="Source">Source</span>
-          </a>
+          </ReactGA.OutboundLink>
         </li>
       </ul>
     </div>
