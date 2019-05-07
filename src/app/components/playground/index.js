@@ -43,6 +43,35 @@ export const Playground = () => (
         </li>
       </ul>
     </div>
+    <div className="playground__item">
+      <h3>
+        <ReactGA.OutboundLink
+          eventLabel="todomvc-nextjs:demo:header"
+          to="https://todomvc.hazmi.now.sh"
+        >
+          <span data-title="TodoMVC - Next.js">TodoMVC - Next.js</span>
+        </ReactGA.OutboundLink>
+      </h3>
+      <p>{introTodoMVC}</p>
+      <ul className="playground__item-footer">
+        <li>
+          <ReactGA.OutboundLink
+            eventLabel="todomvc-nextjs:demo:action"
+            to="https://todomvc.hazmi.now.sh"
+          >
+            <span data-title="Demo">Demo</span>
+          </ReactGA.OutboundLink>
+        </li>
+        <li>
+          <ReactGA.OutboundLink
+            eventLabel="todomvc-nextjs:github"
+            to="https://github.com/hazmi/todomvc-nextjs"
+          >
+            <span data-title="Source">Source</span>
+          </ReactGA.OutboundLink>
+        </li>
+      </ul>
+    </div>
   </div>
 );
 
