@@ -7,7 +7,8 @@ const introTodoMVC = `
   highly concern with the MAINTAINABILITY of a long projects. A clear 
   separation between logic, styles and assets of each features will make 
   updating or removing features much more easier to do. Avoid mountains of 
-  dead codes that can cause a significant problems.
+  dead codes that can cause a significant problems. Written using 
+  Create React App framework.
 `;
 
 export const Playground = () => (
@@ -16,26 +17,26 @@ export const Playground = () => (
     <div className="playground__item">
       <h3>
         <ReactGA.OutboundLink
-          eventLabel="todomvc:demo:header"
-          to="https://todomvc.hazmi.id"
+          eventLabel="todomvc-cra:demo:header"
+          to="https://cra-todomvc.netlify.com"
         >
-          <span data-title="TodoMVC">TodoMVC</span>
+          <span data-title="TodoMVC - Create React App">TodoMVC - Create React App</span>
         </ReactGA.OutboundLink>
       </h3>
       <p>{introTodoMVC}</p>
       <ul className="playground__item-footer">
         <li>
           <ReactGA.OutboundLink
-            eventLabel="todomvc:demo:action"
-            to="https://todomvc.hazmi.id"
+            eventLabel="todomvc-cra:demo:action"
+            to="https://cra-todomvc.netlify.com"
           >
             <span data-title="Demo">Demo</span>
           </ReactGA.OutboundLink>
         </li>
         <li>
           <ReactGA.OutboundLink
-            eventLabel="todomvc:github"
-            to="https://github.com/hazmi/TodoMVC"
+            eventLabel="todomvc-cra:github"
+            to="https://github.com/hazmi/todomvc-cra"
           >
             <span data-title="Source">Source</span>
           </ReactGA.OutboundLink>
